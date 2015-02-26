@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        #tips {
+            text-align: center;
+            margin: 0px auto;
+            color: orange;
+            font-weight: bold;
+            font-size: 35px;
+            line-height: 70px;
+            font-family: "Consolas","Courier","Cambria","SimHei",sans-serif;
+        }
+
+        #ballsNum {
+            color: orange;
+            margin:10px auto;
+            font-weight: bold;
+            width: 400px;
+            font-size: 30px;
+            line-height: 30px;
+            font-family: "consolas","Courier","Cambria","SimHei",sans-serif;
+            float: left;
+        }
+
+        #ballsColor {
+            color: orange;
+            font-weight: bold;
+            margin: 10px 10px;
+            width:580px;
+            font-size: 30px;
+            line-height: 30px;          
+            font-family: "consolas","Courier","Cambria","SimHei",sans-serif;
+            float: right;
+        }
+        #control1{
+            
+            margin:10px 350px 5px; 
+            height:30px;
+            font-family: "consolas","Courier","Cambria","SimHei",sans-serif;
+            color:orange;
+            position:relative;
+        }
+        #rangeNumShowText{
+            position:absolute;
+            font-size:30px;
+            top:0px;
+            left:190px;
+        }
+    </style>
+
+
+</head>
+<body style="height:100%; width:100%">
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+    <div id="tips">现在时间是</div>
+    <div id="ballsNum"> </div>
+    <div id="ballsColor"></div>
+
+    <div id="control1">
+        <input id="range1" type="range" min="0" max="1" value="0.65" step="0.05">
+        <div id="rangeNumShowText"></div>
+    </div>
+
+
+
+    <!--在canvas中如此指定画布大小，并且没有px-->
+    <canvas id="canvas" style="height:100%; width:100%">
+        当前浏览器不支持canvas，请使用更高版本的浏览器
+    </canvas>
+
+    <script src="digit.js"></script>
+    <script src="countdown.js"></script>
+
+</body>
+</html> 
